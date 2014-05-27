@@ -1,6 +1,6 @@
 {
     "name": "status-errors",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Opinionated way to communicate application errors based on status codes.",
     "main": "lib/index.js",
     "directories": {
