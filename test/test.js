@@ -21,9 +21,10 @@ describe('Status Errors', function () {
         error.message.should.equal(codes[401].message);
     });
 
-    it('should allow a name instead of a config object', function () {
-        var error = new StatusError(401, 'Custom Name');
-        error.name.should.equal('Custom Name');
+    it('should allow a message instead of a config object', function () {
+        var error = new StatusError(401, 'Custom message here.');
+        error.name.should.equal('Unauthorized');
+        error.message.should.equal('Custom message here.');
     });
 
     it('should allow custom properties', function () {

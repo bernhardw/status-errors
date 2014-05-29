@@ -25,15 +25,15 @@ Opinionated way to communicate application errors based on status codes.
    
     // Alternative:
     try {
-        throw new StatusError(401, 'Custom Name');
+        throw new StatusError(401, 'Custom message here.');
     } catch (e) {
-        // { status: 401, name: 'Custom Name', message: 'The request requires user authentication.' }
+        // { status: 401, name: 'Unauthorized', message: 'Custom message here.' }
     }
     
-### StatusError(code, [name|options]
+### StatusError(code, [message|options]
 
 * `code`: an available status code.
-* `name` (optional): a custom name.
+* `message` (optional): a custom message.
 * `options` (optional): a object that gets attached to the error.
     
 ## Options
